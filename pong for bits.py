@@ -4,17 +4,19 @@ win = pygame.display.set_mode((750, 500))
 pygame.display.set_caption("pong game for bits")
 white = (255, 255, 255)
 black = (0, 0, 0)
+blue = (0, 0, 128)
+red = (200, 0, 0 )
 class Paddle1(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([10, 75])
-        self.image.fill(black)
+        self.image.fill(red)
         self.rect = self.image.get_rect()
 class Paddle2(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([10, 75])
-        self.image.fill(black)
+        self.image.fill(blue)
         self.rect = self.image.get_rect()
 class Ball(pygame.sprite.Sprite):
     def __init__(self):
